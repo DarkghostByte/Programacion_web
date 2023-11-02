@@ -1,0 +1,171 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-image: url(./img/fondo.png);
+    background-size:cover;
+}
+#logo{
+    height: 35px;
+    width: 150px;
+    position: absolute;
+    top: 1%;
+    left: 88%;
+}
+#barril1{
+    height: 110px;
+    width: 125px;
+    position: absolute;
+    rotate: 20deg;
+    top: 78%;
+    left: 35%;
+    animation-name: animBarril1;
+    animation-duration: 20s;
+}
+#barril2{
+    height: 110px;
+    width: 120px;
+    position: absolute;
+    top: 80%;
+    left: 65%;
+    rotate: -35deg;
+    animation-name: animBarril2;
+    animation-duration: 20s;
+}
+#mono{
+    height: 150px;
+    width: 120px;
+    position: absolute;
+    top: -80%;
+    left: -65%;
+    animation-name: animMono;
+    animation-duration: 20s;
+}
+@keyframes animBarril1{
+    0%{
+        transform: rotate(21deg);
+        transform: rotate(65deg);
+    }
+    25%{
+        transform: rotate(65deg);
+        transform: rotate(21deg);
+    }
+    50%{
+        transform: rotate(21deg);
+        transform: rotate(65deg);
+    }
+    75%{
+        transform: rotate(65deg);
+        transform: rotate(21deg);
+    }
+    100%{
+        transform: rotate(21deg);
+        transform: rotate(65deg);
+    }
+}
+@keyframes animMono{
+    0%{
+        top: 5%;
+        left: 20%;
+    }
+    20%{
+        top: 15%;
+        left: 28%;
+        opacity: 1;
+        transform: scale(1.5);
+        rotate: 0deg;
+    }
+    40%{
+        top: 27%;
+        left: 40%;
+        opacity: 1;
+        transform: scale(1);
+        rotate: 0deg;
+        
+    }
+    60%{
+        top: 40%;
+        left: 50%;
+        opacity: 1;
+        transform: scale(1.5);
+        rotate: 0deg;
+    }
+    80%{
+        top: 75%;
+        left: 65%;
+        opacity: 1;
+        transform: scale(1);
+        rotate: -35deg;
+    }
+    90%{
+        top: 75%;
+        left: 65%;
+        transform: scale(1);
+        opacity: 0.5;
+        transform: rotate(180deg);
+    }
+    95%{
+        top: 75%;
+        left: 65%;
+        transform: scale(1);
+        opacity: 0.5;
+        transform: rotate(-360deg);
+    }
+    97.5%{
+        top: -80%;
+        left: 65%;
+        transform: scale(1);
+        opacity: 0.5;
+        transform: rotate(180deg);
+    }
+    100%{
+    }
+}
+@keyframes animBarril2{
+    0%{
+        top: 80%;
+        left: 65%;
+    }
+    20%{
+        top: 80%;
+        left: 65%;
+    }
+    40%{
+        top: 80%;
+        left: 65%;
+    }
+    60%{
+        top: 80%;
+        left: 65%;
+    }
+    80%{
+        top: 80%;
+        left: 65%;
+        opacity: 1;
+        transform: rotate(0deg);
+    }
+    90%{
+        top: 80%;
+        left: 65%;
+        opacity: 0.5;
+        transform: rotate(180deg);
+    }
+    95%{
+        top: 80%;
+        left: 65%;
+        opacity: 0.5;
+        transform: rotate(-360deg);
+    }
+    97.5%{
+        top: 80%;
+        left: 65%;
+        opacity: 1;
+        transform: rotate(0deg);
+    }
+    100%{
+        
+    }
+}
+
+
